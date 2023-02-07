@@ -4,10 +4,10 @@ using namespace std;
 int main(){
 
 	int a = 5;
-	char b = 'A';
-	char &c = b;
+	string b = "A";
+	string &c = b;
 	int *x = &a;
-	char *y = &b;
+	string *y = &b;
 	int **z = &x;
 
 	cout << a << " " << b << " " << c << " " << x << " " << y << " " << z << endl;
@@ -20,6 +20,6 @@ int main(){
 	cout << a << " " << b << " " << c << " " << x << " " << y << " " << z << endl;
 	**z = 7;
 	cout << a << " " << b << " " << c << " " << x << " " << y << " " << z << endl; 
-	
+
 	return 0;
 }
